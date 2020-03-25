@@ -49,9 +49,14 @@ body {
 
   .menu li {
     font-size: 16px;
+    font-weight: 600;
     padding: 15px 5px;
     white-space: nowrap;
-    color: black;
+    color: rgb(0, 42, 58);
+  }
+
+  .active a {
+    color: rgb(0, 42, 58);
   }
   .logo a,
   .toggle a {
@@ -81,7 +86,7 @@ body {
     order: 2;
     display: none;
     background-color: white;
-    color: black;
+    color: rgb(0, 42, 58);
   }
   .item.active {
     display: block;
@@ -106,7 +111,6 @@ body {
 
   #container2 {
     display: flex;
-    
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -155,15 +159,16 @@ body {
   .watchesdiv {
       background-color: white;
       width: 46%;
-      height: 52vh;
+      height: 350px;
       display: flex;
       flex-direction: column;
+      align-items: center;
       margin: 5px;
   }
 
   .name {
       margin: 10px;
-      margin-top: 11vh;
+      margin-top: 40%;
       font-weight: 600;
       font-size: 14px;
   }
@@ -202,30 +207,44 @@ body {
   .other {
     background-color: rgb(240, 240, 240);
     width: 43vw;
-    height: 320px;
+    height: 350px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 5px;
+  }
+
+  #model-images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
   }
 
   .bottom-image1 {
       width: 100%;
-      height: 40vh;
+      height: 250px;
       background: url(../Images/woman.jfif)no-repeat center/cover;
       display: flex;
       justify-content: center;
       align-items: flex-end;
       text-align: left;
+      margin-bottom: 5px;
+      margin-top: 10px;
   }
 
   .bottom-image2 {
     width: 100%;
-    height: 40vh;
+    height: 250px;
     background: url(../Images/women.jfif)no-repeat center/cover;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     text-align: left;
+    margin-top: 10px;
 }
 
   .image-p {
@@ -233,7 +252,7 @@ body {
       color: white;
       font-weight: 600;
       font-size: 20px;
-      margin-bottom: 10px;
+      margin: 10px;
       text-shadow: 5px 5px 5px black;
       fill: black;
   }
@@ -247,11 +266,15 @@ body {
       background: rgb(241, 241, 241);
   }
 
+  #contact {
+    margin-top: 50px;
+    width: 90%;
+    
+  }
+
   .get {
-      margin-top: 50px;
-      width: 90%;
-      text-align: left;
-      color: rgb(0, 42, 58);
+    text-align: left;
+    color: rgb(0, 42, 58);
   }
 
   #email {
@@ -265,12 +288,19 @@ body {
   }
 
   #social {
+    margin-top: 50px;
+    text-align: left;
       width: 90%;
       display: flex;
       flex-direction: column;
       align-items: center;
       
       
+  }
+  
+  #follow {
+    display: flex;
+    align-self: flex-start;
   }
 
   #icons {
@@ -306,10 +336,24 @@ body {
   /* Desktop menu */
 
   @media all and (min-width: 500px) {
+
+    .watchesdiv, .other {
+      min-height: 350px;
+      height: 400px;
+      max-width: 300px;
+    }
+
+    .small-div {
       
+      max-width: 220px;
+    }
+
+    .name {
+      margin-top: 5vh;
+    }
   }
 
-  @media all and (min-width: 700px) {
+  @media all and (min-width: 730px) {
 
     .fas {
         margin-right: 15px;
@@ -347,7 +391,8 @@ body {
       }
 
       #container1 {
-          height: 50vh;
+          height: 70vh;
+          background: url(../Images/original.jpg)no-repeat center/cover;
       }
 
       #three-watches {
@@ -375,10 +420,10 @@ body {
           padding-right: 10vw;
       }
 
-      .watchesdiv {
+      .watchesdiv, .other {
         background-color: white;
-        width: 31vw;
-        height: 52vh;
+        width: 220px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         margin: 5px;
@@ -386,16 +431,65 @@ body {
 
     .other {
         background-color: rgb(240, 240, 240);
-        width: 31vw;
-        height: 52vh;
-        display: flex;
-        flex-direction: column;
-        margin: 5px;
+        
       }
 
       .small-div {
-          width: 170px;
+          width: 240px;
       }
+
+    #model-images {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 40vh;
+    }
+
+    .bottom-image1 {
+      width: 50%;
+      margin-bottom: 0px;
+      
+    }
+
+    .bottom-image2 {
+      width: 50%;
+    }
+
+    #footer {
+      width: 100%;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    #contact {
+      width: 45%;
+      
+      
+    }
+
+    #contact h3 {
+      text-align: center;
+      width: 90%;
+    }
+
+    #social {
+      width: 45%;
+      
+      
+    }
+
+    #follow {
+      
+      align-self: center;
+
+    }
 }
-  
+
+@media all and (min-height: 1100px) {
+
+  .watchesdiv, .other {
+    min-height: 450px;
+  }
+
+}
   
