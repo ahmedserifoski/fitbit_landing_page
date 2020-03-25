@@ -16,6 +16,7 @@ body {
     width: 100%;
     max-width: 1200px;
     height: 60vh;
+    max-height: 620px;
     background: url(../Images/original.jpg)no-repeat center/cover;
     background-position: center top;
     overflow: hidden;
@@ -93,6 +94,7 @@ body {
   }
 
   #three-watches {
+    margin-bottom: 50px;
       display: flex;
       flex-direction: column;
       align-items: left;
@@ -396,6 +398,7 @@ body {
       }
 
       #three-watches {
+        
           height: 50vh;
           justify-content: center;
       }
@@ -414,6 +417,7 @@ body {
 
       #from-smartwatches {
           height: 12vh;
+          max-height: 100px;
           display: flex;
           align-items: center;
           padding-left: 10vw;
