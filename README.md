@@ -1,6 +1,6 @@
 # FitBit Product Landing Page Clone
 
-**LIVE LINK:** https://app.netlify.com/sites/fitbit-product-landing-page/overview
+**LIVE LINK:** https://fitbit-product-landing-page.netlify.app/
 
 ## Features
 * Fully responsive (mobile first)
